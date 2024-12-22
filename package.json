@@ -1,0 +1,12 @@
+{
+  "name": "platforma-ogloszeniowa",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && ng serve",
+    "start:backend": "cd backend && symfony server:start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
